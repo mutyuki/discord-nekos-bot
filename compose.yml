@@ -1,0 +1,14 @@
+services:
+  bot:
+    build: .
+    container_name: discord-nekos-bot
+    env_file:
+      - .env
+    environment:
+      - TZ=Asia/Tokyo
+    restart: unless-stopped
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"

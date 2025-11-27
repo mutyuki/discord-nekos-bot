@@ -1,0 +1,23 @@
+cat > .gitignore << 'EOF'
+# Rust
+/target/
+Cargo.lock
+
+# 環境変数（重要！）
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+*.log
+EOF
+.env
