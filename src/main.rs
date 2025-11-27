@@ -16,7 +16,7 @@ struct Handler;
 
 #[async_trait]
 impl EventHandler for Handler {
-    async fn ready(&self, ctx: Context, ready: Ready) {
+    async fn ready(&self, ctx: Context, _: Ready) {
         tokio::spawn(async move {
             loop {
                 let now = Local::now();
