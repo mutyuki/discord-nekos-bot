@@ -47,7 +47,7 @@ async fn send_nightly_message(ctx: &Context) -> Result<(), Box<dyn std::error::E
         .send_message(
             &ctx.http,
             serenity::builder::CreateMessage::new()
-                .content("そろそろ寝る時間ですにゃー🌙😴")
+                .content("まだ寝ないのかにゃ？")
                 .embed(
                     serenity::builder::CreateEmbed::new()
                         .image(image_url)
