@@ -39,7 +39,7 @@ struct GeminiPart {
 }
 
 pub async fn fetch_neko_image_url() -> Result<String, Box<dyn std::error::Error>> {
-    let response = reqwest::get("https://api.nekosia.cat/api/v1/images/catgirl")
+    let response = reqwest::get("https://api.nekosia.cat/api/v1/images/random")
         .await?
         .json::<NekosiaResponse>()
         .await?;
