@@ -59,7 +59,7 @@ pub async fn generate_sleep_message(
     let image_base64 = general_purpose::STANDARD.encode(image_bytes);
 
     let url = format!(
-        "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key={}",
+        "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key={}",
         api_key
     );
 
